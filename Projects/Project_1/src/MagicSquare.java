@@ -28,16 +28,11 @@ public class MagicSquare {
 	
 	//private String filename
 	
-	 private static String filename = "valid3x3";
-
-
-	public static void checkMatrix(){
-		
-		MagicSquare.readMatrix();
-		
-	}
-	
-	
+	/*
+	 *  ============================================
+	 *    		C O N S T R U C T O R S  
+	 *  ============================================
+	 */
 	public MagicSquare(){
 		
 	}
@@ -45,14 +40,56 @@ public class MagicSquare {
 	
 	
 	
+	/*
+	 *  ============================================
+	 *  	  P U B L I C     M E T H O D S 
+	 *  ============================================
+	 */
+	/*
+	 * checkMatrix() 
+	 * This method checks to ensure that a given matrix is
+	 * actually a magic square by performing a series of checks
+	 * 
+	 * PARAMS:
+	 * 	@String filename - name of the file you want to check
+	 */
+	public static void checkMatrix(String filename){
+		
+		MagicSquare.readMatrix(filename);
+		
+	}
+	/*
+	 * createMatrix() 
+	 * This method checks to ensure that a given matrix is
+	 * actually a magic square by performing a series of checks
+	 * 
+	 * PARAMS:
+	 * 	@String filename - name of the file where you want to 
+	 * 	create a new magic square
+	 * 
+	 * 	@int size - size of the new magic square
+	 * 
+	 */
+	public static void createMatrix(String filename, int size){
+		
+		
+		
+	}
 	
-	private static void readMatrix(){
+	
+	
+	/*
+	 *  ============================================
+	 *  	 P R I V A T E      M E T H O D S 
+	 *  ============================================
+	 */
+	private static void readMatrix(String filename){
 		
 		try {
 			//String filename = "valid3x3.txt";
 			
 			//System.out.print("Enter the file name with extension :");
-			File file = new File("src/" + filename);
+			File file = new File(filename);
 			Scanner input = new Scanner(file);
 			
 			while (input.hasNextLine()){
@@ -67,5 +104,9 @@ public class MagicSquare {
 			ex.printStackTrace();
 		}
 	}	
+	
+	
+	
+	
 	
 }
