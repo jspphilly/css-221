@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Indexed Unordered List">
+
+  <test name="IUArrayList">   
+  	<parameter name="listType" value="arrayList"/> 
+    <classes>     
+      <class name="Test_1"/>
+	  <class name="Test_9"/>
+	  <class name="Test_38"/>
+    </classes>
+  </test> <!-- IUArrayList -->
+
+</suite> <!-- Indexed Unordered List -->

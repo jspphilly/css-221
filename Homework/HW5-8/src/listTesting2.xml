@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="List Testing 2">
+  <test name="Good List"> 
+  	<parameter name="listType" value="goodList"/>   
+    <classes>     
+      <class name="Test_1"/>
+	  <class name="Test_2"/>
+	  <class name="Test_3"/><class name="Test_4"></class>
+    	<class name="Test_5"></class>
+    	<class name="Test_6"></class>
+    	<class name="Test_7"></class>
+    	<class name="Test_8"></class>
+    </classes>
+  </test> <!-- Good List-->
+
+  <test name="Bad List">   
+  	<parameter name="listType" value="badList"/> 
+    <classes>     
+      <class name="Test_1"/>
+	  <class name="Test_2"/>
+	  <class name="Test_3"/><class name="Test_4"></class>
+    	<class name="Test_5"></class>
+    	<class name="Test_6"></class>
+    	<class name="Test_7"></class>
+    	<class name="Test_8"></class>
+    </classes>
+  </test> <!-- Bad List-->
+
+</suite> <!-- List Testing 2 -->
